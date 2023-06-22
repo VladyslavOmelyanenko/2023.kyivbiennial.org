@@ -1,0 +1,162 @@
+@font-face {
+  font-family: KTFForma;
+  src: url('fonts/forma.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: KTFForma;
+}
+
+header {
+  height: 100vh;
+  background-image: url('images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+}
+
+nav {
+  display: flex;
+  padding: 1.6vh 3.4vw 0 3.4vw;
+  justify-content: space-between;
+  font-size: 0.9vw;
+}
+
+nav .active {
+  color: #fff;
+}
+
+nav .date {
+  color: #fff;
+}
+
+.about {
+  padding-left: 3.4vw;
+  position: absolute;
+  display: flex;
+  height: 50vh;
+  bottom: 8vh;
+}
+
+.about h2 {
+  font-size: 0.9vw;
+  width: 10vw;
+}
+
+.about p {
+  column-count: 2;
+  font-size: 0.8vw;
+  width: 63.5vw;
+  height: 100%;
+  text-align: left;
+  column-fill: auto;
+  word-break: keep-all;
+  line-height: 116%;
+}
+
+.about .credits {
+  font-size: 0.8vw;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.credits .credits-title {
+  font-size: 0.9vw;
+  margin-left: 1.6vw;
+}
+
+.credits-table  {
+  margin-top: 1.6vw;
+  margin-left: 1.6vw;
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.logo svg {
+  width: 25vw;
+  bottom: 0;
+  height: auto;
+}
+
+
+@media screen and (max-width: 1030px) {
+  .about p {
+    font-size: 0.9vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .about p {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about p {
+    font-size: 1.1vw;
+  }
+}
+/* phoneee */
+@media screen and (max-width: 650px) {
+  .about p {
+    font-size: 1.1vw;
+  }
+}
+
+@media screen and (max-height: 606px){
+  .about{
+    height: 55vh;
+  }
+}
+
+@media screen and (max-height: 552px) {
+  .about {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-height: 508px) {
+  .about {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-height: 466px) {
+  .about {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-height: 435px) {
+
+  header {
+    position: relative;
+    height: 435px;
+  }
+
+  .about {
+    height: 304px;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+
+  }
+}
