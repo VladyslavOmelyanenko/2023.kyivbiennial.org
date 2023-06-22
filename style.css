@@ -46,7 +46,7 @@ nav .date {
 
 .about h2 {
   font-size: 0.9vw;
-  width: 10vw;
+  width: 9.7vw;
 }
 
 .about p {
@@ -112,7 +112,7 @@ nav .date {
     font-size: 1.1vw;
   }
 }
-/* phoneee */
+/* phone */
 @media screen and (max-width: 650px) {
   .about p {
     font-size: 1.1vw;
