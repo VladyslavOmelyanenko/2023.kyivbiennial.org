@@ -28,12 +28,18 @@ nav {
   font-size: 0.9vw;
 }
 
-nav .active {
+
+.date {
   color: #fff;
 }
 
-nav .date {
+.language {
+  cursor: pointer;
+}
+
+.activeLanguage {
   color: #fff;
+  cursor: default;
 }
 
 .about {
@@ -76,7 +82,17 @@ nav .date {
   margin-top: 1.6vw;
   margin-left: 1.6vw;
   display: inline-block;
+  border-spacing: 10px 0;
 }
+
+.credits-table tr td{
+  padding-top: 4px;
+}
+
+.credits-table tr:last-child td:last-child{
+  padding-top: 0px;
+}
+
 
 .logo {
   position: absolute;
