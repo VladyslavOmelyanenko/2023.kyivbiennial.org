@@ -157,16 +157,92 @@ nav {
   }
 }
 /* phone */
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   header {
-    background-image: url('images/background.png');
+    background-image: url('images/bg_mobile.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100vw;
+    height: auto;
+    display: grid;
   }
-} */
 
-@media screen and (max-height: 525px) {
+  header nav {
+    position: relative;
+    font-size: 1.2em;
+  }
+
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 6vw;
+    bottom: auto;
+    order: 2;
+    margin-top: 7vh;
+  }
+
+  .english-text, .ukrainian-text {
+    column-count: 1;
+    width: 88vw;
+    height: 100%;
+    text-align: left;
+    column-fill: auto;
+    word-break: keep-all;
+    line-height: 116%;
+    font-size: 3.5vw !important;
+  }
+
+  .about h2 {
+    display: none;
+  }
+
+  .logo {
+    order: 1;
+    position: relative;
+    margin-top: 23vh;
+  }
+
+  .logo svg {
+    width: 62vw;
+  }
+
+  .credits .credits-title {
+    margin-top: 7vh;
+    font-size: 3.5vw;
+    margin-left: 0;
+  }
+
+  .credits-table {
+    font-size: 3.5vw;
+    margin-left: 0;
+    border-spacing: 0 0;
+    margin-top: 3vh;
+
+  }
+  .credits tr td:first-child {
+    padding-right: 6vw;
+  }
+
+  .curation td, .management td, .graphic-design td, .web-development td {
+    padding-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    margin-top: 10vh;
+  }
+  .about {
+    margin-top: 5vh;
+  }
+  .credits-title {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (max-height: 525px) and (min-width: 900px) {
 
   header {
     position: relative;
