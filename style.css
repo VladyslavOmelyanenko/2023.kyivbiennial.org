@@ -25,7 +25,7 @@ nav {
   display: flex;
   padding: 1.6vh 3.4vw 0 3.4vw;
   justify-content: space-between;
-  font-size: 0.9vw;
+  font-size: 0.75em;
 }
 
 
@@ -51,13 +51,12 @@ nav {
 }
 
 .about h2 {
-  font-size: 0.9vw;
+  font-size: 0.75em;
   width: 9.7vw;
 }
 
-.about p {
+.english-text, .ukrainian-text {
   column-count: 2;
-  font-size: 0.8vw;
   width: 63.5vw;
   height: 100%;
   text-align: left;
@@ -66,19 +65,27 @@ nav {
   line-height: 116%;
 }
 
-.about .credits {
+.english-text {
   font-size: 0.8vw;
+}
+
+.ukrainian-text {
+  font-size: 0.75vw;
+}
+
+.about .credits {
   display: flex;
   height: 100%;
   flex-direction: column;
 }
 
 .credits .credits-title {
-  font-size: 0.9vw;
+  font-size: 0.75em;
   margin-left: 1.6vw;
 }
 
-.credits-table  {
+.credits-table {
+  font-size: 0.8vw;
   margin-top: 1.6vw;
   margin-left: 1.6vw;
   display: inline-block;
@@ -111,63 +118,63 @@ nav {
 }
 
 
-@media screen and (max-width: 1030px) {
-  .about p {
-    font-size: 0.9vw;
+@media screen and (max-width: 1300px) {
+  .about .english-text {
+    font-size: 0.87vw;
+  }
+  .about .ukrainian-text {
+    font-size: 0.81vw;
+  }
+  .credits-table {
+    font-size: 0.83vw;
   }
 }
 
-@media screen and (max-width: 860px) {
-  .about p {
-    font-size: 1vw;
+@media screen and (max-width: 1160px) {
+  .about .ukrainian-text {
+      font-size: 0.86vw;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+  .about .english-text {
+    font-size: 0.96vw;
+  }   
+    .credits-table {
+      font-size: 0.92vw;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+  .about .ukrainian-text {
+    font-size: 0.93vw;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .about p {
-    font-size: 1.1vw;
+@media screen and (max-width: 935px) {
+  .about .english-text {
+    font-size: 1.04vw;
   }
 }
 /* phone */
-@media screen and (max-width: 650px) {
-  .about p {
-    font-size: 1.1vw;
+/* @media screen and (max-width: 900px) {
+  header {
+    background-image: url('images/background.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
-}
+} */
 
-@media screen and (max-height: 606px){
-  .about{
-    height: 55vh;
-  }
-}
-
-@media screen and (max-height: 552px) {
-  .about {
-    height: 60vh;
-  }
-}
-
-@media screen and (max-height: 508px) {
-  .about {
-    height: 65vh;
-  }
-}
-
-@media screen and (max-height: 466px) {
-  .about {
-    height: 70vh;
-  }
-}
-
-@media screen and (max-height: 435px) {
+@media screen and (max-height: 525px) {
 
   header {
     position: relative;
-    height: 435px;
+    height: 525px;
   }
 
   .about {
-    height: 304px;
+    height: 370px;
   }
 
   .logo {
