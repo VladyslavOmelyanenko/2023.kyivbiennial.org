@@ -1,6 +1,13 @@
 @font-face {
   font-family: KTFForma;
-  src: url('fonts/forma.otf');
+  font-weight: normal;
+  src: url('fonts/KTF2101-Regular.otf');
+}
+
+@font-face {
+  font-family: KTFForma;
+  font-weight: bold;
+  src: url('fonts/KTF2101-Bold.otf');
 }
 
 * {
@@ -28,7 +35,6 @@ nav {
   font-size: 0.75em;
 }
 
-
 .date {
   color: #fff;
 }
@@ -53,6 +59,7 @@ nav {
 .about h2 {
   font-size: 0.75em;
   width: 9.7vw;
+  font-weight: bold;
 }
 
 .english-text, .ukrainian-text {
@@ -89,11 +96,14 @@ nav {
   margin-top: 1.6vw;
   margin-left: 1.6vw;
   display: inline-block;
-  border-spacing: 10px 0;
+  border-spacing: 0;
 }
 
 .credits-table tr td{
   padding-top: 4px;
+}
+.credits tr td:first-child {
+  padding-right: 1vw;
 }
 
 .credits-table tr:last-child td:last-child{
@@ -115,6 +125,30 @@ nav {
   width: 25vw;
   bottom: 0;
   height: auto;
+}
+
+@media screen and (max-height: 735px) {
+  .about {
+    height: 55vh;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .about {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-height: 615px) {
+  .about {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .about {
+    height: 70vh;
+  }
 }
 
 
@@ -219,6 +253,7 @@ nav {
     margin-left: 0;
     border-spacing: 0 0;
     margin-top: 3vh;
+    margin-bottom: 5vh;
 
   }
   .credits tr td:first-child {
