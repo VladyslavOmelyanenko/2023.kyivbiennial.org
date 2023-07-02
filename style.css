@@ -10,22 +10,51 @@
   src: url('fonts/KTF2101-Bold.otf');
 }
 
-* {
-  margin: 0;
-  padding: 0;
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
 }
 
 body {
   font-family: KTFForma;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url('images/KB_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.foreground {
+  position: absolute;
+  width: calc(100vw - 2vw);
+  height: calc(100vh - 2vw);
+  z-index: 10;
+  pointer-events: none;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.foreground img {
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
 }
 
 header {
   height: 100vh;
-  background-image: url('images/background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 420px;
 }
 
 nav {
@@ -49,11 +78,12 @@ nav {
 }
 
 .about {
-  padding-left: 3.4vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   position: absolute;
   display: flex;
-  height: 50vh;
-  bottom: 8vh;
+  height: 60vh;
+  top: 1vh;
 }
 
 .about h2 {
@@ -62,18 +92,20 @@ nav {
   font-weight: bold;
 }
 
-.english-text, .ukrainian-text {
+.english-text,
+.ukrainian-text {
+  color: #fff;
   column-count: 2;
-  width: 63.5vw;
+  width: 100%;
   height: 100%;
   text-align: left;
-  column-fill: auto;
+  column-fill: balance;
   word-break: keep-all;
-  line-height: 116%;
+  line-height: 125%;
 }
 
 .english-text {
-  font-size: 0.8vw;
+  font-size: clamp(13px, 1vw, 32px);
 }
 
 .ukrainian-text {
@@ -99,21 +131,20 @@ nav {
   border-spacing: 0;
 }
 
-.credits-table tr td{
+.credits-table tr td {
   padding-top: 4px;
 }
 .credits tr td:first-child {
   padding-right: 1vw;
 }
 
-.credits-table tr:last-child td:last-child{
+.credits-table tr:last-child td:last-child {
   padding-top: 0px;
 }
 
-
 .logo {
   position: absolute;
-  display: block;
+  display: none;
   text-align: center;
   margin: 0 auto;
   right: 0;
@@ -151,8 +182,7 @@ nav {
   }
 }
 
-
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   .about .english-text {
     font-size: 0.87vw;
   }
@@ -162,22 +192,23 @@ nav {
   .credits-table {
     font-size: 0.83vw;
   }
-}
+} 
 
 @media screen and (max-width: 1160px) {
   .about .ukrainian-text {
-      font-size: 0.86vw;
-    }
+    font-size: 0.86vw;
+  }
 }
 
 @media screen and (max-width: 1110px) {
   .about .english-text {
     font-size: 0.96vw;
-  }   
-    .credits-table {
-      font-size: 0.92vw;
-    }
+  }
+  .credits-table {
+    font-size: 0.92vw;
+  }
 }
+
 
 @media screen and (max-width: 1015px) {
   .about .ukrainian-text {
@@ -190,13 +221,14 @@ nav {
     font-size: 1.04vw;
   }
 }
+*/
 /* phone */
 @media screen and (max-width: 900px) {
+  .background {
+    background-image: url('images/KB_mobile.jpg');
+  }
+
   header {
-    background-image: url('images/bg_mobile.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100vw;
     height: auto;
     display: grid;
   }
@@ -211,13 +243,14 @@ nav {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 0 6vw;
+    margin: 0 auto;
     bottom: auto;
     order: 2;
     margin-top: 7vh;
   }
 
-  .english-text, .ukrainian-text {
+  .english-text,
+  .ukrainian-text {
     column-count: 1;
     width: 88vw;
     height: 100%;
@@ -254,13 +287,15 @@ nav {
     border-spacing: 0 0;
     margin-top: 3vh;
     margin-bottom: 5vh;
-
   }
   .credits tr td:first-child {
     padding-right: 6vw;
   }
 
-  .curation td, .management td, .graphic-design td, .web-development td {
+  .curation td,
+  .management td,
+  .graphic-design td,
+  .web-development td {
     padding-top: 20px !important;
   }
 }
@@ -278,7 +313,6 @@ nav {
 }
 
 @media screen and (max-height: 525px) and (min-width: 900px) {
-
   header {
     position: relative;
     height: 525px;
@@ -291,6 +325,5 @@ nav {
   .logo {
     position: absolute;
     bottom: 0;
-
   }
 }
