@@ -1,199 +1,199 @@
 @font-face {
-  font-family: KTFForma;
-  font-weight: normal;
-  src: url('fonts/KTF2101-Regular.otf');
+	font-family: KTFForma;
+	font-weight: normal;
+	src: url('fonts/KTF2101-Regular.otf');
 }
 
 @font-face {
-  font-family: KTFForma;
-  font-weight: bold;
-  src: url('fonts/KTF2101-Bold.otf');
+	font-family: KTFForma;
+	font-weight: bold;
+	src: url('fonts/KTF2101-Bold.otf');
 }
 
 ::-moz-selection {
-  color: black;
-  background: white;
+	color: black;
+	background: white;
 }
 
 ::selection {
-  color: black;
-  background: white;
+	color: black;
+	background: white;
 }
 
 body {
-  font-family: KTFForma;
-  margin: 0;
-  padding: 0;
+	font-family: KTFForma;
+	margin: 0;
+	padding: 0;
 }
 
 .background {
-  background-image: url('images/KB_bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+	background-image: url('images/KB_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }
 
 .wire {
-  position: absolute;
-  width: calc(100vw - 2vw);
-  height: calc(100vh - 2vw);
-  pointer-events: none;
-  padding: 1vw;
-  box-sizing: border-box;
-  overflow: hidden;
+	position: absolute;
+	width: calc(100vw - 2vw);
+	height: calc(100vh - 2vw);
+	pointer-events: none;
+	padding: 1vw;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .wire img {
-  position: absolute;
-  height: 100%;
-  left: 50%;
-  object-fit: contain;
-  transform: translateX(-50%);
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	object-fit: contain;
+	transform: translateX(-50%);
 }
 
 .z0 {
-  z-index: 0;
+	z-index: 0;
 }
 
 .z5 {
-  z-index: 5;
+	z-index: 5;
 }
 
 .z10 {
-  z-index: 10;
+	z-index: 10;
 }
 
 header {
-  height: 100vh;
-  overflow-y: auto;
+	height: 100vh;
+	overflow-y: auto;
 }
 
 nav {
-  display: flex;
-  padding: 1.6vh 3.4vw 0 3.4vw;
-  justify-content: space-between;
-  font-size: 0.75em;
+	display: flex;
+	padding: 1.6vh 3.4vw 0 3.4vw;
+	justify-content: space-between;
+	font-size: 0.75em;
 }
 
 .date {
-  color: #fff;
+	color: #fff;
 }
 
 .language {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .activeLanguage {
-  color: #fff;
-  cursor: default;
+	color: #fff;
+	cursor: default;
 }
 
 .about {
-  padding-left: 1vw;
-  padding-right: 1vw;
-  position: absolute;
-  display: flex;
-  height: 60vh;
-  top: 1vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	position: absolute;
+	display: flex;
+	height: 60vh;
+	top: 1vh;
 }
 
 .about h2 {
-  font-size: 0.75em;
-  width: 9.7vw;
-  font-weight: bold;
+	font-size: 0.75em;
+	width: 9.7vw;
+	font-weight: bold;
 }
 
 .english-text,
 .ukrainian-text {
-  color: #fff;
-  column-count: 2;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  column-fill: balance;
-  word-break: keep-all;
-  line-height: 125%;
+	color: #fff;
+	column-count: 2;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	column-fill: balance;
+	word-break: keep-all;
+	line-height: 125%;
 }
 
 .english-text {
-  font-size: clamp(13px, 1vw, 32px);
+	font-size: clamp(11px, 0.9vw, 32px);
 }
 
 .ukrainian-text {
-  font-size: 0.75vw;
+	font-size: 0.75vw;
 }
 
 .about .credits {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
 }
 
 .credits .credits-title {
-  font-size: 0.75em;
-  margin-left: 1.6vw;
+	font-size: 0.75em;
+	margin-left: 1.6vw;
 }
 
 .credits-table {
-  font-size: 0.8vw;
-  margin-top: 1.6vw;
-  margin-left: 1.6vw;
-  display: inline-block;
-  border-spacing: 0;
+	font-size: 0.8vw;
+	margin-top: 1.6vw;
+	margin-left: 1.6vw;
+	display: inline-block;
+	border-spacing: 0;
 }
 
 .credits-table tr td {
-  padding-top: 4px;
+	padding-top: 4px;
 }
 .credits tr td:first-child {
-  padding-right: 1vw;
+	padding-right: 1vw;
 }
 
 .credits-table tr:last-child td:last-child {
-  padding-top: 0px;
+	padding-top: 0px;
 }
 
 .logo {
-  position: absolute;
-  display: none;
-  text-align: center;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-  bottom: 0;
+	position: absolute;
+	display: none;
+	text-align: center;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 .logo svg {
-  width: 25vw;
-  bottom: 0;
-  height: auto;
+	width: 25vw;
+	bottom: 0;
+	height: auto;
 }
 
 @media screen and (max-height: 735px) {
-  .about {
-    height: 55vh;
-  }
+	.about {
+		height: 55vh;
+	}
 }
 
 @media screen and (max-height: 670px) {
-  .about {
-    height: 60vh;
-  }
+	.about {
+		height: 60vh;
+	}
 }
 
 @media screen and (max-height: 615px) {
-  .about {
-    height: 65vh;
-  }
+	.about {
+		height: 65vh;
+	}
 }
 
 @media screen and (max-height: 575px) {
-  .about {
-    height: 70vh;
-  }
+	.about {
+		height: 70vh;
+	}
 }
 
 /* @media screen and (max-width: 1300px) {
@@ -238,109 +238,109 @@ nav {
 */
 /* phone */
 @media screen and (max-width: 900px) {
-  .background {
-    background-image: url('images/KB_mobile.jpg');
-  }
+	.background {
+		background-image: url('images/KB_mobile.jpg');
+	}
 
-  header {
-    display: grid;
-  }
+	header {
+		display: grid;
+	}
 
-  header nav {
-    position: relative;
-    font-size: 1.2em;
-  }
+	header nav {
+		position: relative;
+		font-size: 1.2em;
+	}
 
-  .wire img {
-    transition: all 20ms ease-in-out;
-  }
+	.wire img {
+		transition: all 20ms ease-in-out;
+	}
 
-  .about {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 0 auto;
-    bottom: auto;
-    order: 2;
-    margin-top: 7vh;
-  }
+	.about {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin: 0 auto;
+		bottom: auto;
+		order: 2;
+		margin-top: 7vh;
+	}
 
-  .english-text,
-  .ukrainian-text {
-    column-count: 1;
-    width: 88vw;
-    height: 100%;
-    text-align: left;
-    column-fill: auto;
-    word-break: keep-all;
-    line-height: 116%;
-    font-size: 3.5vw !important;
-  }
+	.english-text,
+	.ukrainian-text {
+		column-count: 1;
+		width: 88vw;
+		height: 100%;
+		text-align: left;
+		column-fill: auto;
+		word-break: keep-all;
+		line-height: 116%;
+		font-size: 3.5vw !important;
+	}
 
-  .about h2 {
-    display: none;
-  }
+	.about h2 {
+		display: none;
+	}
 
-  .logo {
-    order: 1;
-    position: relative;
-    margin-top: 23vh;
-  }
+	.logo {
+		order: 1;
+		position: relative;
+		margin-top: 23vh;
+	}
 
-  .logo svg {
-    width: 62vw;
-  }
+	.logo svg {
+		width: 62vw;
+	}
 
-  .credits .credits-title {
-    margin-top: 7vh;
-    font-size: 3.5vw;
-    margin-left: 0;
-  }
+	.credits .credits-title {
+		margin-top: 7vh;
+		font-size: 3.5vw;
+		margin-left: 0;
+	}
 
-  .credits-table {
-    font-size: 3.5vw;
-    margin-left: 0;
-    border-spacing: 0 0;
-    margin-top: 3vh;
-    margin-bottom: 5vh;
-  }
-  .credits tr td:first-child {
-    padding-right: 6vw;
-  }
+	.credits-table {
+		font-size: 3.5vw;
+		margin-left: 0;
+		border-spacing: 0 0;
+		margin-top: 3vh;
+		margin-bottom: 5vh;
+	}
+	.credits tr td:first-child {
+		padding-right: 6vw;
+	}
 
-  .curation td,
-  .management td,
-  .graphic-design td,
-  .web-development td {
-    padding-top: 20px !important;
-  }
+	.curation td,
+	.management td,
+	.graphic-design td,
+	.web-development td {
+		padding-top: 20px !important;
+	}
 }
 
 @media screen and (max-width: 450px) {
-  .logo {
-    margin-top: 10vh;
-  }
-  .about {
-    margin-top: 5vh;
-  }
-  .credits-title {
-    margin-top: 5vh;
-  }
+	.logo {
+		margin-top: 10vh;
+	}
+	.about {
+		margin-top: 5vh;
+	}
+	.credits-title {
+		margin-top: 5vh;
+	}
 }
 
 @media screen and (max-height: 525px) and (min-width: 900px) {
-  header {
-    position: relative;
-    height: 525px;
-  }
+	header {
+		position: relative;
+		height: 525px;
+	}
 
-  .about {
-    height: 370px;
-  }
+	.about {
+		height: 370px;
+	}
 
-  .logo {
-    position: absolute;
-    bottom: 0;
-  }
+	.logo {
+		position: absolute;
+		bottom: 0;
+	}
 }
