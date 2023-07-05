@@ -19,7 +19,7 @@ body {
 
 header {
   height: 100vh;
-  background-image: url('images/background.png');
+  background-image: url('images/bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@ header {
 
 nav {
   display: flex;
-  padding: 1.6vh 3.4vw 0 3.4vw;
+  padding: 3.4vw 3.4vw 0 3.4vw;
   justify-content: space-between;
   font-size: 0.9em;
   letter-spacing: 0.03em;
