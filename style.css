@@ -1,6 +1,11 @@
 @font-face {
   font-family: KTFForma;
-  src: url('fonts/forma.otf');
+  src: url('fonts/KTF2101-Regular.otf');
+}
+@font-face {
+  font-family: KTFForma;
+  src: url("fonts/KTF2101-Bold.otf");
+  font-weight: bold;
 }
 
 * {
@@ -25,16 +30,18 @@ nav {
   display: flex;
   padding: 1.6vh 3.4vw 0 3.4vw;
   justify-content: space-between;
-  font-size: 0.75em;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
 }
-
 
 .date {
   color: #fff;
 }
 
 .language {
+  font-size: 0.9em;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .activeLanguage {
@@ -51,11 +58,12 @@ nav {
 }
 
 .about h2 {
-  font-size: 0.75em;
+  font-size: 0.9em;
   width: 9.7vw;
+  letter-spacing: 0.03em;
 }
 
-.english-text, .ukrainian-text {
+.english-text, .ukrainian-text, .german-text {
   column-count: 2;
   width: 63.5vw;
   height: 100%;
@@ -70,37 +78,25 @@ nav {
 }
 
 .ukrainian-text {
-  font-size: 0.75vw;
+  font-size: 0.73vw;
+}
+.german-text{
+  font-size: 0.707vw;
 }
 
-.about .credits {
+.about .links {
   display: flex;
   height: 100%;
   flex-direction: column;
 }
 
-.credits .credits-title {
-  font-size: 0.75em;
+.links .links-title {
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
   margin-left: 1.6vw;
-}
-
-.credits-table {
-  font-size: 0.8vw;
-  margin-top: 1.6vw;
-  margin-left: 1.6vw;
-  display: inline-block;
-  border-spacing: 0;
-}
-
-.credits-table tr td{
-  padding-top: 4px;
-}
-.credits tr td:first-child {
-  padding-right: 1vw;
-}
-
-.credits-table tr:last-child td:last-child{
-  padding-top: 0px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 
@@ -119,6 +115,14 @@ nav {
   bottom: 0;
   height: auto;
 }
+
+.logo .logoukr {
+  width: 27.2vw;
+  height: auto;
+  bottom: 0;
+  margin-left: 1.6vw;
+}
+
 
 @media screen and (max-height: 735px) {
   .about {
@@ -152,8 +156,8 @@ nav {
   .about .ukrainian-text {
     font-size: 0.81vw;
   }
-  .credits-table {
-    font-size: 0.83vw;
+  .about .german-text {
+    font-size: 0.76vw;
   }
 }
 
@@ -163,13 +167,22 @@ nav {
     }
 }
 
+@media screen and (max-width: 1160px) {
+  .about .german-text {
+    font-size: 0.79vw;
+  }
+}
+
 @media screen and (max-width: 1110px) {
   .about .english-text {
-    font-size: 0.96vw;
+    font-size: 0.95vw;
   }   
-    .credits-table {
-      font-size: 0.92vw;
-    }
+}
+
+@media screen and (max-width: 1060px) {
+  .about .german-text {
+    font-size: 0.86vw;
+  }
 }
 
 @media screen and (max-width: 1015px) {
@@ -177,6 +190,8 @@ nav {
     font-size: 0.93vw;
   }
 }
+
+
 
 @media screen and (max-width: 935px) {
   .about .english-text {
@@ -210,7 +225,7 @@ nav {
     margin-top: 7vh;
   }
 
-  .english-text, .ukrainian-text {
+  .english-text, .ukrainian-text, .german-text {
     column-count: 1;
     width: 88vw;
     height: 100%;
@@ -235,22 +250,15 @@ nav {
     width: 62vw;
   }
 
-  .credits .credits-title {
-    margin-top: 7vh;
-    font-size: 3.5vw;
-    margin-left: 0;
-  }
-
-  .credits-table {
-    font-size: 3.5vw;
-    margin-left: 0;
-    border-spacing: 0 0;
-    margin-top: 3vh;
+  .links {
+    margin-top: 5vh;
     margin-bottom: 5vh;
-
   }
-  .credits tr td:first-child {
-    padding-right: 6vw;
+
+  .links .links-title {
+    margin-bottom: 1vh;
+    font-size: 3.5vw;
+    margin-left: 0;
   }
 
   .curation td, .management td, .graphic-design td, .web-development td {
@@ -265,9 +273,7 @@ nav {
   .about {
     margin-top: 5vh;
   }
-  .credits-title {
-    margin-top: 5vh;
-  }
+
 }
 
 @media screen and (max-height: 525px) and (min-width: 900px) {
