@@ -1,74 +1,24 @@
 @font-face {
   font-family: KTFForma;
-  font-weight: normal;
-  src: url('fonts/KTF2101-Regular.otf');
+  src: url('fonts/forma.otf');
 }
 
-@font-face {
-  font-family: KTFForma;
-  font-weight: bold;
-  src: url('fonts/KTF2101-Bold.otf');
-}
-
-::-moz-selection {
-  color: black;
-  background: white;
-}
-
-::selection {
-  color: black;
-  background: white;
-}
-
-body {
-  font-family: KTFForma;
+* {
   margin: 0;
   padding: 0;
 }
 
-.background {
-  background-image: url('images/KB_bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-}
-
-.wire {
-  position: absolute;
-  width: calc(100vw - 2vw);
-  height: calc(100vh - 2vw);
-  pointer-events: none;
-  padding: 1vw;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.wire img {
-  position: absolute;
-  height: 100%;
-  left: 50%;
-  object-fit: contain;
-  transform: translateX(-50%);
-}
-
-.z0 {
-  z-index: 0;
-}
-
-.z5 {
-  z-index: 5;
-}
-
-.z10 {
-  z-index: 10;
+body {
+  font-family: KTFForma;
 }
 
 header {
   height: 100vh;
-  overflow-y: auto;
+  background-image: url('images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
 }
 
 nav {
@@ -77,6 +27,7 @@ nav {
   justify-content: space-between;
   font-size: 0.75em;
 }
+
 
 .date {
   color: #fff;
@@ -92,34 +43,30 @@ nav {
 }
 
 .about {
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 3.4vw;
   position: absolute;
   display: flex;
-  height: 60vh;
-  top: 1vh;
+  height: 50vh;
+  bottom: 8vh;
 }
 
 .about h2 {
   font-size: 0.75em;
   width: 9.7vw;
-  font-weight: bold;
 }
 
-.english-text,
-.ukrainian-text {
-  color: #fff;
+.english-text, .ukrainian-text {
   column-count: 2;
-  width: 100%;
+  width: 63.5vw;
   height: 100%;
   text-align: left;
-  column-fill: balance;
+  column-fill: auto;
   word-break: keep-all;
-  line-height: 125%;
+  line-height: 116%;
 }
 
 .english-text {
-  font-size: clamp(13px, 1vw, 32px);
+  font-size: 0.8vw;
 }
 
 .ukrainian-text {
@@ -145,20 +92,21 @@ nav {
   border-spacing: 0;
 }
 
-.credits-table tr td {
+.credits-table tr td{
   padding-top: 4px;
 }
 .credits tr td:first-child {
   padding-right: 1vw;
 }
 
-.credits-table tr:last-child td:last-child {
+.credits-table tr:last-child td:last-child{
   padding-top: 0px;
 }
 
+
 .logo {
   position: absolute;
-  display: none;
+  display: block;
   text-align: center;
   margin: 0 auto;
   right: 0;
@@ -196,7 +144,8 @@ nav {
   }
 }
 
-/* @media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 1300px) {
   .about .english-text {
     font-size: 0.87vw;
   }
@@ -206,23 +155,22 @@ nav {
   .credits-table {
     font-size: 0.83vw;
   }
-} 
+}
 
 @media screen and (max-width: 1160px) {
   .about .ukrainian-text {
-    font-size: 0.86vw;
-  }
+      font-size: 0.86vw;
+    }
 }
 
 @media screen and (max-width: 1110px) {
   .about .english-text {
     font-size: 0.96vw;
-  }
-  .credits-table {
-    font-size: 0.92vw;
-  }
+  }   
+    .credits-table {
+      font-size: 0.92vw;
+    }
 }
-
 
 @media screen and (max-width: 1015px) {
   .about .ukrainian-text {
@@ -235,14 +183,14 @@ nav {
     font-size: 1.04vw;
   }
 }
-*/
 /* phone */
 @media screen and (max-width: 900px) {
-  .background {
-    background-image: url('images/KB_mobile.jpg');
-  }
-
   header {
+    background-image: url('images/bg_mobile.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: auto;
     display: grid;
   }
 
@@ -251,23 +199,18 @@ nav {
     font-size: 1.2em;
   }
 
-  .wire img {
-    transition: all 20ms ease-in-out;
-  }
-
   .about {
     position: relative;
     display: flex;
     flex-direction: column;
     height: auto;
-    margin: 0 auto;
+    padding: 0 6vw;
     bottom: auto;
     order: 2;
     margin-top: 7vh;
   }
 
-  .english-text,
-  .ukrainian-text {
+  .english-text, .ukrainian-text {
     column-count: 1;
     width: 88vw;
     height: 100%;
@@ -304,15 +247,13 @@ nav {
     border-spacing: 0 0;
     margin-top: 3vh;
     margin-bottom: 5vh;
+
   }
   .credits tr td:first-child {
     padding-right: 6vw;
   }
 
-  .curation td,
-  .management td,
-  .graphic-design td,
-  .web-development td {
+  .curation td, .management td, .graphic-design td, .web-development td {
     padding-top: 20px !important;
   }
 }
@@ -330,6 +271,7 @@ nav {
 }
 
 @media screen and (max-height: 525px) and (min-width: 900px) {
+
   header {
     position: relative;
     height: 525px;
@@ -342,5 +284,6 @@ nav {
   .logo {
     position: absolute;
     bottom: 0;
+
   }
 }
