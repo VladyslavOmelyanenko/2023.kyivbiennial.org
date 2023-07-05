@@ -28,7 +28,7 @@ header {
 
 nav {
   display: flex;
-  padding: 3.4vw 3.4vw 0 3.4vw;
+  padding: 2vw 2vw 0 2vw;
   justify-content: space-between;
   font-size: 0.9em;
   letter-spacing: 0.03em;
@@ -50,7 +50,7 @@ nav {
 }
 
 .about {
-  padding-left: 3.4vw;
+  padding-left: 2vw;
   position: absolute;
   display: flex;
   height: 50vh;
@@ -59,7 +59,7 @@ nav {
 
 .about h2 {
   font-size: 0.9em;
-  width: 9.7vw;
+  width: 11.1vw;
   letter-spacing: 0.03em;
 }
 
@@ -248,6 +248,10 @@ nav {
 
   .logo svg {
     width: 62vw;
+  }
+
+  .logo .logoukr {
+    width: 70vw;
   }
 
   .links {
