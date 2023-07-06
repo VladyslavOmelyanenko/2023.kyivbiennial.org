@@ -78,7 +78,7 @@ nav {
 }
 
 .ukrainian-text {
-  font-size: 0.73vw;
+  font-size: 0.84vw;
 }
 .german-text{
   font-size: 0.707vw;
@@ -154,7 +154,7 @@ nav {
     font-size: 0.87vw;
   }
   .about .ukrainian-text {
-    font-size: 0.81vw;
+    font-size: 0.91vw;
   }
   .about .german-text {
     font-size: 0.76vw;
@@ -163,7 +163,7 @@ nav {
 
 @media screen and (max-width: 1160px) {
   .about .ukrainian-text {
-      font-size: 0.86vw;
+      font-size: 0.97vw;
     }
 }
 
@@ -185,9 +185,9 @@ nav {
   }
 }
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1020px) {
   .about .ukrainian-text {
-    font-size: 0.93vw;
+    font-size: 1.07vw;
   }
 }
 
